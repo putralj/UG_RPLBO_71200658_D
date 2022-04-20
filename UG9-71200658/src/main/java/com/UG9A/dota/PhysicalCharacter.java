@@ -17,7 +17,7 @@ public abstract class PhysicalCharacter extends Character{
     public void attacked(int damageReceived){
         int totalDamage;
         totalDamage = damageReceived - this.armor;
-        this.health =  this.health - totalDamage;
+        super.attacked(totalDamage);
 
     }
 }
