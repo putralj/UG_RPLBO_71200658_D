@@ -10,6 +10,7 @@ public class MagicCharacter extends Character{
 
     public void attacked(int damageReceived){
         this.health = this.health - damageReceived;
+        super.attacked(this.health);
     }
 
     public void showCharacterInfo(){
